@@ -1,0 +1,65 @@
+//
+//  PrefixHeader.pch
+//  BaiSiBuDeJie
+//
+//  Created by zhangzhe on 16/6/4.
+//  Copyright © 2016年 Zack. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+XMGExtension.h"
+#import "UIBarButtonItem+XMGExtension.h"
+
+#ifdef DEBUG        // 调试
+#define NSLog( s, ... ) NSLog( @"<%@:(第%d行)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else               // 开发
+#define NSLog( s, ... )
+#endif /* DEBUG */
+
+
+#define XMGRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define XMGGlobalBg XMGRGBColor(223, 223, 223)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
